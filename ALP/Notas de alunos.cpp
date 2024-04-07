@@ -8,7 +8,7 @@ int main()
     
     cout<<fixed<<setprecision(2);
     cout<<"Notas de alunos \n" ;
-    while (cont<=/50)
+    while (cont<=50)
     {
         cout<<"\nDigite nota 1: ";
         cin>>n1;
