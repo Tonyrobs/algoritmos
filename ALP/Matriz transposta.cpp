@@ -34,7 +34,7 @@ int main()
 	}
 	cout<<"\nMatriz B: \n";
 	for(l=0; l<=2; l++) //visualizar a matriz B
-	{x
+	{
 		for(c=0; c<=2; c++)
 		{
 			cout<<B[l][c]<<" ";
