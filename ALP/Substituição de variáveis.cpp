@@ -13,5 +13,5 @@ int main()
         temp=a;
         a=b;
         b=temp;
-        cout<<"Após a substituição, o valor A é: "<< b<< " e o valor B é: "<<a;
+        cout<<"Após a substituição, o valor A é: "<< a << " e o valor B é: "<< b;
 }
