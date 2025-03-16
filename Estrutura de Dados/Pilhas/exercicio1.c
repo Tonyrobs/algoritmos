@@ -1,36 +1,36 @@
-#incluir <stdio.h>
-#incluir <stdlib.h>
-#incluir "pilha.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include "pilha.h"
 
-int principal(){
- int elem, num;
+int main(){
+    int elem, num;
 
- impressãof("Digite o número de elementos:");
- digitalização("%d", &elem);
+    printf("Digite o numero de elementos: ");
+    scanf("%d", &elem);
 
- Pilha A = pilha(elém);
- Pilha B = pilha(elém);
+    Pilha A = pilha(elem);
+    Pilha B = pilha(elem);
 
- impressãof("Digite os números:\n");
+    printf("Digite os números:\n");
 
-    par (int i = 0; i < elem; i++) {
- digitalização("%d", &num);
+    for (int i = 0; i < elem; i++) {
+        scanf("%d", &num);
     
-        encantador (!vaziap(A) && num > A->item[A->topo]) {
- empilha(desempilha(A), B);
+        while (!vaziap(A) && num > A->item[A->topo]) {
+            empilha(desempilha(A), B);
         }
     
         empilha(num, A);
     
-        encantador (!vaziap(B)) {
- empilha(desempilha(B), A);
+        while (!vaziap(B)) {
+            empilha(desempilha(B), A);
         }
     }
- impressãof("Numeros ordenados:\n");
-    encantador (!vaziap(A)) {
- impressãof("%d", desempilha(A));
+    printf("Numeros ordenados:\n");
+    while (!vaziap(A)) {
+        printf("%d ", desempilha(A));
     }
- impressãof("\n");
+    printf("\n");
 
- retardo 0;
+    return 0;
 }
