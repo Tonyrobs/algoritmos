@@ -1,1 +1,1 @@
-### Exercícios simples de algoritmos
+### Exercícios
