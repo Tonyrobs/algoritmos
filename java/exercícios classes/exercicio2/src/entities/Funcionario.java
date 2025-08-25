@@ -37,11 +37,10 @@ public class Funcionario {
         return this.salario - imposto;
     }
     public void aumentoSalario(double porcent){
-        double valorAumento = this.salario * (porcent/100.0);
-        this.salario = this.salarioLiquido() + valorAumento;
+        this.salario += this.salario * porcent/100.0;
     }
     public String toString(){
-        return String.format("\nDados atualizados: %s, R$ %.2f ", nome, salario);
+        return String.format("\nDados atualizados: %s, R$ %.2f ", nome, salarioLiquido());
 
     }
 }
