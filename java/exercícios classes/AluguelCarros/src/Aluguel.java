@@ -1,6 +1,6 @@
 public class Aluguel {
     private String modelo;
-    double valorFinal;
+    private double valorFinal;
     private int diaria;
     private double basico = 90.0;
     private double intermediario = 110.0;
